@@ -6,10 +6,10 @@ var students = [
 ];
 var sorter = function(a,b,fnc) {
   a.sort(function(a,b){
-  if (a.name === b.name) {
+  if (a.name === b.name) {//if age is same
    return a.age < b.age;
   }
-  return a.name > b.name;
+  return a.name > b.name;//
   fnc();
 })}
 sorter(students);
